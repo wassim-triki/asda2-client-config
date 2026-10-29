@@ -4,7 +4,9 @@
 #include <stddef.h>
 
 struct server_settings {
+    unsigned char opset_data[20];
     char ip[20];
+    char server_name[20];
     int port;
 };
 

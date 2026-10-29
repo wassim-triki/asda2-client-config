@@ -6,8 +6,8 @@
 int main(void)
 {
   struct server_settings settings = {
-      .ip = "127.0.0.1",
-      .port = 5000
+    .ip = "127.0.0.1",
+    .port = 5000
   };
 
   char config_path[MAX_PATH];
@@ -22,6 +22,10 @@ int main(void)
   printf("IP: %s | PORT: %d\n",
      settings.ip
     ,settings.port);
+
+  printf("ip offset: %d 0x%X | port offset: %d 0x%X\n",
+    offsetof(struct server_settings, ip),offsetof(struct server_settings, ip)
+    ,offsetof(struct server_settings, port),offsetof(struct server_settings, port));
 
   return 0;
 }
