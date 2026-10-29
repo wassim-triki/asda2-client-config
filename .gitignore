@@ -1,0 +1,11 @@
+# Compiled outputs
+*.exe
+*.o
+*.obj
+
+# Zig build artifacts
+.zig-cache/
+zig-out/
+
+# Local configuration
+client_endpoint.ini
