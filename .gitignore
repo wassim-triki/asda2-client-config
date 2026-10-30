@@ -12,3 +12,9 @@ client_endpoint.ini
 
 # Debug symbols
 *.pdb
+
+# Generated binaries
+*.dll
+
+# Generated assembly
+/endpoint_config.s
