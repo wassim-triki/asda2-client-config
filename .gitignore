@@ -8,7 +8,7 @@
 zig-out/
 
 # Local configuration
-client_endpoint.ini
+client_config.ini
 
 # Debug symbols
 *.pdb

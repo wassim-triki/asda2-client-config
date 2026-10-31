@@ -57,7 +57,9 @@ int get_endpoint_config_path(char *path, size_t capacity)
   char *filename = last_slash + 1;
 
   size_t remaining_space = capacity - (filename - path);
-  const char *ini_name = "client_endpoint.ini";
+
+  const char *ini_name = "client_config.ini";
+  
   if (strlen(ini_name) + 1 > remaining_space) {
       return 0;
   }
